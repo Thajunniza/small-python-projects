@@ -19,27 +19,26 @@ This project is designed to demonstrate **production-ready Python code** with mo
 - Optional: familiarity with **pytest** for running unit tests
 
 ---
+## Project Structure
+Bagels/
+├── bagels/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── utils.py
+│   ├── game.py
+│   ├── constants.py
+│   └── display.py
+├── tests/
+│   ├── __init__.py
+│   └── test_game.py
+├── run.py
+└── README.md
 
-## Folder Structure
+## How to Run
+Run the game with `python run.py` and select the menu options: 1 to play, 2 to run unit tests, 3 to exit. Run tests directly using `python -m unittest discover -s tests -p "*.py"`.
 
-    Bagels/
-    ├── bagels/          # Main package
-    │   ├── __init__.py
-    │   ├── constants.py # Messages and hints
-    │   ├── utils.py     # Helper functions
-    │   └── game.py      # Game logic
-    ├── tests/           # Unit tests
-    │   ├── __init__.py
-    │   ├── test_game.py
-    │   └── test_utils.py
-    ├── main.py          # Entry point to run the game
-    ├── README.md        # This file
-    └── requirements.txt # Optional dependencies
-
----
 
 ## How to Play
-
 1. Navigate to the Bagels project folder:
 
         cd small-python-projects/Bagels
@@ -52,17 +51,17 @@ This project is designed to demonstrate **production-ready Python code** with mo
 4. Use the hints (**Fermi**, **Pico**, **Bagel**) to guide your next guess.  
 5. Continue until you guess the correct number.  
 
----
-
-## Running Tests
-
-Unit tests are included for the core logic:
-
-        pip install pytest        # Install pytest if needed
-        pytest tests/
 
 ---
 
+## Key Learnings
+1. **Random Number Generation:** Used Python's `random` library to generate unique-digit numbers with a non-zero first digit.
+2. **Modular Programming:** Code is separated into modules (`utils`, `game`, `display`, `constants`) for clarity and testability.
+3. **Unit Testing:** Validated game logic and input handling using Python's `unittest`.
+4. **Constants & Formatting:** Centralized all messages in `constants.py` and used string formatting for dynamic prompts.
+5. **Python Best Practices:** Applied `if __name__ == "__main__":`, input validation, error handling, and separation of concerns.
+
+---
 ## Author
 
 **Thajunniza** – Sharing Python learning journey and building production-ready small projects  
