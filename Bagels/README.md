@@ -20,19 +20,21 @@ This project is designed to demonstrate **production-ready Python code** with mo
 
 ---
 ## Project Structure
+
 Bagels/
-├── bagels/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── utils.py
-│   ├── game.py
-│   ├── constants.py
-│   └── display.py
-├── tests/
-│   ├── __init__.py
-│   └── test_game.py
-├── run.py
-└── README.md
+    bagels/
+        __init__.py
+        main.py
+        utils.py
+        game.py
+        constants.py
+        display.py
+    tests/
+        __init__.py
+        test_game.py
+        test_utils.py
+    run.py
+    README.md
 
 ## How to Run
 Run the game with `python run.py` and select the menu options: 1 to play, 2 to run unit tests, 3 to exit. Run tests directly using `python -m unittest discover -s tests -p "*.py"`.
