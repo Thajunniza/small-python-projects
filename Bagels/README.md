@@ -21,19 +21,22 @@ This project is designed to demonstrate **production-ready Python code** with mo
 ---
 ## Project Structure
 
+```
 Bagels/
-    bagels/
-        __init__.py
-        main.py
-        utils.py
-        game.py
-        constants.py
-        display.py
-    tests/
-        __init__.py
-        test_game.py
-        test_utils.py
-    run.py
+├── bagels/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── utils.py
+│   ├── game.py
+│   ├── constants.py
+│   └── display.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_game.py
+│   └── test_utils.py
+├── run.py
+└── README.md
+```
     README.md
 
 ## How to Run
